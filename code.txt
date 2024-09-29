@@ -1,0 +1,4 @@
+
+To connect to DB localhost:
+
+mysql -u root -h localhost -P 3306 -p

@@ -1,0 +1,15 @@
+doctor
+
+pincode
+gender
+dengue
+malaria
+fever
+
+#######################################################
+1. storing (local db, redcap)
+2. pincode (map --> point) ranipet -----> hotspot
+
+#######################################################
+3. ML algorith for type of disease prediction
+4. cloud hosting 

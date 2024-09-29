@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Data Collection System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px 30px;
+            color: white;
+            text-align: right;
+            font-size: 16px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #ddd;
+        }
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            margin: 40px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+            animation: fadeInUp 1s ease;
+        }
+        .btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3b82f6;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn:hover {
+            background-color: #2563eb;
+            transform: scale(1.05);
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            width: 100%;
+        }
+        .feature-box {
+            width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .feature-box:hover {
+            transform: translateY(-10px);
+        }
+        .feature-box h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .feature-box p {
+            font-size: 16px;
+            color: #555;
+        }
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature-box {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="container">
+        <h1>Welcome to the Patient Data Collection System</h1>
+        <p>Our system helps you manage patient data efficiently and securely. Click below to start entering data.</p>
+        <a href="form.html" class="btn">Go to Database</a>
+        <div class="features">
+            <div class="feature-box">
+                <h3>Secure Data</h3>
+                <p>Your data is safe with our state-of-the-art encryption.</p>
+            </div>
+            <div class="feature-box">
+                <h3>Easy Access</h3>
+                <p>Access patient data from anywhere, anytime.</p>
+            </div>
+            <div class="feature-box">
+                <h3>24/7 Support</h3>
+                <p>Our support team is available around the clock.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
